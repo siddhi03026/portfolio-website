@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio — Siddhi Verma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-shapes">
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+    <div class="shape shape4"></div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="name" aria-label="Siddhi Verma">Siddhi Verma</h1>
+        <p class="tagline" id="typing" aria-live="polite"></p>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#home"><span>Home</span></a>
+        <a href="#about"><span>About</span></a>
+        <a href="#skills"><span>Skills</span></a>
+        
+        <a href="#education"><span>Education</span></a>
+        <a href="#contact"><span>Contact</span></a>
+        <div class="nav-indicator"></div>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Back to Top -->
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm Siddhi Verma</h1>
+          <p>A passionate developer and designer creating engaging digital experiences.</p>
+          <a href="#about" class="btn">Learn More</a>
+        </div>
+        <div class="hero-visual">
+          <div class="portrait-3d">
+            <img src="sidhi.png.jpg" alt="Portrait of Siddhi" class="portrait-img" />
+            <div class="shine"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I'm <strong>Siddhi</strong>, an aspiring <em>Full-Stack Web Developer</em> and AI enthusiast.
+          I enjoy turning ideas into products — from design to deployment. My strengths:
+          problem solving, collaboration, and creative coding.
+        </p>
+        <address>
+          Indore, Madhya Pradesh · <a href="mailto:siddhiverma776@gmail.com">siddhiverma776@gmail.com</a>
+        </address>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+          <article class="skill-card" data-level="95"><h3>HTML & CSS</h3><div class="skill-bar"><span></span></div></article>
+          <article class="skill-card" data-level="85"><h3>JavaScript</h3><div class="skill-bar"><span></span></div></article>
+          <article class="skill-card" data-level="78"><h3>Python</h3><div class="skill-bar"><span></span></div></article>
+          <article class="skill-card" data-level="88"><h3>Problem Solving</h3><div class="skill-bar"><span></span></div></article>
+          <article class="skill-card" data-level="92"><h3>Teamwork</h3><div class="skill-bar"><span></span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="education" id="education">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon"><span>🎓</span></div>
+          <div class="content">
+            <h3>B.Tech in CSE</h3>
+            <span>2023 - Present</span>
+            <p>Acropolis Institute of Technology and Research, Indore</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><span>🏫</span></div>
+          <div class="content">
+            <h3>Higher Secondary</h3>
+            <span>2021- 2023</span>
+            <p>Mahavir Convent H.S School, Indore</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contactForm" novalidate>
+          <div class="form-grid">
+            <label><span>Name</span><input type="text" name="name" required placeholder="Your name" /></label>
+            <label><span>Email</span><input type="email" name="email" required placeholder="you@example.com" /></label>
+            <label class="full"><span>Message</span><textarea name="message" rows="5" required placeholder="Write your message..."></textarea></label>
+            <div class="form-actions full"><button type="submit" class="btn">Send Message</button></div>
+          </div>
+        </form>
+        <div id="toast" class="toast" hidden></div>
+        <div class="social-links">
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <hr>
+      <p>Created by Siddhi Verma, © <time datetime="2025">2025</time></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
